@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+                     validUntil="2026-06-05T08:52:54Z"
+                     cacheDuration="PT604800S"
+                     entityID="https://test-zodiac-observatory.org/accounts/saml/nucleus/metadata/">
+    <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                                Location="https://test-zodiac-observatory.org/accounts/saml/nucleus/sls/" />
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                     Location="https://test-zodiac-observatory.org/accounts/saml/nucleus/acs/"
+                                     index="1" />
+    </md:SPSSODescriptor>
+
+
+</md:EntityDescriptor>
